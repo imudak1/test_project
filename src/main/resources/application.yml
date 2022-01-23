@@ -1,0 +1,29 @@
+jwt:
+  secret: secret
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: dima2000
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob: non_contextual_creation= true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: dimaOp62@gmail.com
+    password: vberqqqidgqgzlzz
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
